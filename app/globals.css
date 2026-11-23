@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  font-family: var(--font-sans), 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial), Georgia, serif;
+}
+
+/* Global keyboard focus indicator */
+:focus-visible {
+  outline: 2px solid #E2B34B;
+  outline-offset: 2px;
+}
+
+/* Leaflet map styling aligned with Warm Basalt */
+.leaflet-container {
+  font-family: inherit;
+  background-color: #0C0E11;
+}
+
+.leaflet-bar {
+  border: 1px solid #353942 !important;
+  box-shadow: none !important;
+}
+
+.leaflet-bar a {
+  background-color: #14171C !important;
+  color: #F2F0EB !important;
+  border-bottom: 1px solid #262A32 !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #1C2028 !important;
+  color: #E2B34B !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(12, 14, 17, 0.88) !important;
+  color: #9B988F !important;
+  font-size: 11px !important;
+  border-radius: 3px;
+}
+
+.leaflet-control-attribution a {
+  color: #E2B34B !important;
+}
+
+/* Static high-contrast ring for actual location pin */
+.marker-actual-ring {
+  border: 2px solid rgba(248, 113, 113, 0.8);
+  background: rgba(248, 113, 113, 0.16);
+  border-radius: 9999px;
+}
+
+/* Respect user reduced motion preferences globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "UNSGuessr - Game Geoguessr Universitas Sebelas Maret",
+  "description": "Game tebak lokasi kampus Universitas Sebelas Maret (UNS) ala Geoguessr dengan Google Street View 360° asli di seluruh kampus Kentingan, Manahan, Kleco, dan Mesen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

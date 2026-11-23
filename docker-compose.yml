@@ -1,0 +1,18 @@
+services:
+  unsguessr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: unsguessr:latest
+    container_name: unsguessr_app
+    ports:
+      - "${PORT:-19981}:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "users": [
+    {
+      "id": "ab1a8aad-77c6-43f6-8cf6-63fe484c6b69",
+      "username": "testaccount",
+      "displayName": "testaccount",
+      "passwordHash": "4fdd9acf12ee527e8b581158056b72bf2054035d0a702efbba67758c3031644e5487c97988264b41ee3d7c1714c7b32caf8bb1014bb1753af52e889e3128acaf",
+      "salt": "b4a54a7a5d9feeecb9bb21db1bc423eb",
+      "registeredIp": "2404:c0:be02:834:a825:9402:5c3e:82b3",
+      "createdAt": "2026-10-23T07:48:07.897Z",
+      "lastLoginAt": "2026-10-23T07:48:20.185Z",
+      "stats": {
+        "highScore": 4500,
+        "gamesPlayed": 1,
+        "duelWins": 0,
+        "duelLosses": 0,
+        "exp": 520,
+        "level": 2
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "token": "0c0c61f0611b94f5202406d05bbd59aeea2c2e8948cea8e041f618c1dc45561f",
+      "userId": "ab1a8aad-77c6-43f6-8cf6-63fe484c6b69",
+      "username": "testaccount",
+      "displayName": "testaccount",
+      "ip": "2404:c0:be02:834:a825:9402:5c3e:82b3",
+      "createdAt": "2026-10-23T07:48:07.897Z",
+      "expiresAt": "2026-11-22T07:48:07.898Z"
+    },
+    {
+      "token": "b55663db1431af033e8607b444b3b8541594e58fbfa8b2325b14c19f188782f9",
+      "userId": "ab1a8aad-77c6-43f6-8cf6-63fe484c6b69",
+      "username": "testaccount",
+      "displayName": "testaccount",
+      "ip": "2404:c0:be02:834:a825:9402:5c3e:82b3",
+      "createdAt": "2026-10-23T07:48:20.185Z",
+      "expiresAt": "2026-11-22T07:48:20.186Z"
+    }
+  ],
+  "ipLogs": [
+    {
+      "ip": "2404:c0:be02:834:a825:9402:5c3e:82b3",
+      "registeredCount": 1,
+      "registeredUsernames": [
+        "testaccount"
+      ],
+      "lastRegisteredAt": "2026-10-23T07:48:07.897Z"
+    }
+  ]
+}

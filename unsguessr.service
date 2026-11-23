@@ -1,0 +1,21 @@
+[Unit]
+Description=UNSGuessr - Geoguessr Universitas Sebelas Maret
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/unsguessr
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=5s
+Environment=NODE_ENV=production
+Environment=PORT=19981
+
+# Security sandbox flags
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
